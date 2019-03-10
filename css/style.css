@@ -16,7 +16,7 @@ h5,
 h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  color: #002347; }
+  color: #ad38a8; }
 
 .list {
   list-style: none;
@@ -65,7 +65,7 @@ button:focus {
       margin-top: 0px; } }
 
 .title-bg {
-  background: #002347; }
+  background: #ad38a8; }
 
 
 .section_gap {
@@ -146,7 +146,8 @@ button:focus {
       .header_area .navbar .nav .nav-item .nav-link {
         font: 500 14px/80px "Rubik", sans-serif;
         text-transform: capitalize;
-        color: #002347;
+        position:left;
+        color: #436fc0;
         padding: 0px;
         display: inline-block; }
         @media (max-width: 991px) {
@@ -155,7 +156,7 @@ button:focus {
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #fdc632; }
+        color: #ad38a8; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
@@ -201,7 +202,7 @@ button:focus {
             transition: all 0.4s linear; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
               line-height: 45px;
-              color: #002347;
+              color: #ad38a8;
               padding: 0px 30px;
               transition: all 150ms linear;
               display: block;
@@ -209,7 +210,7 @@ button:focus {
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:last-child {
               border-bottom: none; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-              background: #fdc632;
+              background: #436fc0;
               color: #fff; }
         @media (min-width: 992px) {
           .header_area .navbar .nav .nav-item.submenu:hover ul {
@@ -228,7 +229,7 @@ button:focus {
       .header_area .navbar .search i {
         font-weight: 600; }
   .header_area.white-header .navbar .nav .nav-item.active .nav-link, .header_area.white-header .navbar .nav .nav-item:hover .nav-link {
-    color: #fdc632; }
+    color: #ad38a8; }
   .header_area.white-header .navbar .nav .nav-item .nav-link {
     color: #ffffff; }
   .header_area.navbar_fixed .main_menu {
@@ -255,10 +256,10 @@ button:focus {
   .header_area.white-header.navbar_fixed .main_menu {
     background: #002347; }
     .header_area.white-header.navbar_fixed .main_menu .navbar .nav .nav-item.active .nav-link, .header_area.white-header.navbar_fixed .main_menu .navbar .nav .nav-item:hover .nav-link {
-      color: #fdc632; }
+      color: #436fc0; }
 
 #search_input_box {
-  background: #fdc632;
+  background: #436fc0;
   text-align: center;
   padding: 5px 20px; }
   #search_input_box .form-control {
@@ -326,7 +327,7 @@ button:focus {
       font-weight: 500; }
     .home_banner_area .banner_inner .banner_content p {
       font-size: 20px;
-      color: #002347;
+      color: #436fc0;
       font-weight: 500; }
 
 .blog_banner {
@@ -494,7 +495,7 @@ button:focus {
     width: 65px;
     text-align: center;
     border-radius: 50px;
-    background: #fdc632;
+    background: #436fc0;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -551,9 +552,9 @@ button:focus {
       background: #fff; }
     .single_course:hover .price {
       background: #002347;
-      color: #fdc632; }
+      color: #ad38a8; }
     .single_course:hover h4 a {
-      color: #fdc632; }
+      color: #ad38a8; }
 
 /* End Popular Courses Area css
 ============================================================================================ */
@@ -576,7 +577,7 @@ button:focus {
     bottom: -1px;
     height: 1px;
     width: 74px;
-    background: #fdc632; }
+    background: #ad38a8; }
 
 .course_details_left .course_list {
   margin-bottom: 0; }
@@ -593,7 +594,7 @@ button:focus {
       font-size: 12px;
       border-radius: 0px; }
       .course_details_left .course_list li .primary-btn:hover {
-        background: #fdc632;
+        background: #ad38a8;
         color: #ffffff; }
       @media (max-width: 575px) {
         .course_details_left .course_list li .primary-btn {
@@ -637,7 +638,7 @@ button:focus {
   padding: 20px 0px; }
   .right-contents .avg-review span {
     font-size: 18px;
-    color: #fdc632; }
+    color: #ad38a8; }
   @media (max-width: 991px) {
     .right-contents .avg-review {
       margin-bottom: 20px; } }
@@ -663,7 +664,7 @@ button:focus {
     .right-contents .feedeback textarea:focus {
       box-shadow: none; }
 .right-contents .star .checked {
-  color: #fdc632; }
+  color: #ad38a8; }
 .right-contents .comments-area {
   padding: 0;
   border: 0;
@@ -805,7 +806,7 @@ button:focus {
       -o-transition: all 0.3s ease 0s;
       transition: all 0.3s ease 0s; }
       .single-trainer .meta-text a:hover {
-        color: #fdc632; }
+        color: #ad38a8; }
   .single-trainer:hover .meta-text {
     box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.15); }
 
@@ -972,7 +973,7 @@ sup,
 sub,
 u,
 del {
-  color: #f8b600; }
+  color: #ad38a8; }
 
 h1 {
   font-size: 36px; }
@@ -1944,9 +1945,10 @@ h6 {
 
 .primary-btn {
   display: inline-block;
-  background: #fdc632;
+  
+  background: #002347;
   padding: 0px 48px;
-  color: #002347;
+  color: #ad38a8;
   font-size: 13px;
   font-weight: 500;
   line-height: 50px;
@@ -1960,14 +1962,14 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .primary-btn:hover {
-    background: #002347;
-    color: #fdc632; }
+    background: #ad38a8;
+    color: #002347; }
 
 .primary-btn2 {
   display: inline-block;
   background: #002347;
   padding: 0px 48px;
-  color: #fdc632;
+  color: #d460d8d5;
   font-size: 13px;
   font-weight: 500;
   line-height: 48px;
@@ -2085,7 +2087,7 @@ h6 {
     display: block;
     width: 25px;
     height: 3px;
-    background: #fdc632;
+    background: #ad38a8;
     margin: auto;
     margin-bottom: 4px;
     transition: all 400ms linear;
@@ -2135,3 +2137,4 @@ h6 {
   .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
     line-height: 40px; }
 
+  }
