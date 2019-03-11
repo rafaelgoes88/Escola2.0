@@ -1,27 +1,105 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/login.css"/>
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <title>Ayla Martins</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
   </head>
 
-  
   <body>
+    
+    <header class="header_area">
+      <div class="main_menu">
 
 
-        <body>
-                <div class="container login-container">
-                  <div class="row">
-                    <div class="col-md-6 ads">
-                      <h1><span id="f1">Espaço de Dança</span><br><span id="sl">Ayla Martins</span></h1>
-                    </div>
-                    <div class="col-md-6 login-form">
-                      <div class="profile-img">
-                        <img src="img/elements/login.jpg" alt="profile_img" height="140px" width="140px;">
-                      </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            
+            <a class="navbar-brand logo_h" href="index.html"
+              ><img src="" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span> <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+           
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link"  href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="">Eventos</a>
+                </li>
+               
+                <li class="nav-item submenu dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Modalidades</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="">Hip Hop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href=""
+                        >Dança Contemporânea</a
+                      >
+                      <li class="nav-item">
+                        <a class="nav-link" href=""
+                          >Jazz Dance</a
+                        >
+                        <li class="nav-item">
+                          <a class="nav-link" href=""
+                            >Ballet Clássico</a
+                          >
+                    </li>
+                    </ul>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contato</a>
+                </li>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="home_banner_area"style="padding: 12%;padding-left: 50%;">
+    <div>
+
+                <div class="container login-container" style="padding-top: 2%;" >
+
                       <h3>Login</h3>
                       <form>
                         <div class="form-group">
@@ -31,7 +109,7 @@
                           <input type="text" class="form-control" name="password" placeholder="Senha">
                         </div>
                         <div class="form-group">
-                          <button type="button" class="btn  btn-lg btn-block" style="background-color: #ad38a8; color: #002347">Sign In</button>
+                          <button type="button" class="btn  btn-lg btn-block" style="background-color: #002347; color: #ad38a8">Entrar</button>
                         </div>
                         <div class="form-group forget-password">
                             <a href="#">Esqueceu a senha?</a>
@@ -40,5 +118,14 @@
                     </div>
                   </div>
                 </div>
+            </div>
+            </section>
+            <footer class="footer" style=" background: #002347; text-align: center; height:50px;">
+                    Desenvolvido por R&L<br>
+                    Projeto Integrador 2019.
+                     
+                      
+                  
+                </footer>
     </body>
 </html>
