@@ -1,61 +1,44 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="css/login.css"/>
-    <script src="js/login.js"></script>
 
- 
-</head>
-<body>
-        <div class="tile">
-                <div class="tile-header">
-                  <h2 style="color: white; opacity: .75; font-size: 4rem; display: flex; justify-content: center; align-items: center; height: 100%;">SIGN IN</h2>
-                </div>
-                
-                <div class="tile-body">
-                  <form id="form">
-                    <label class="form-input">
-                      <i class="material-icons">person</i>
-                      <input type="text" autofocus="true" required />
-                      <span class="label">Username</span>
-                      <span class="underline"></span>
-                    </label>
-                    
-                    <label class="form-input">
-                      <i class="material-icons">lock</i>
-                      <input type="password" required />
-                      <span class="label">Password</span>
-                      <div class="underline"></div>
-                    </label>
-                    
-                    <div class="submit-container clearfix" style="margin-top: 2rem;">          
-                      <div id="submit" role="button" type="button" class="btn btn-irenic float-right" tabindex="0">
-                        <span>SIGN IN</span>
-                      </div>
-                      
-                      <div class="login-pending">
-                        <div class=spinner>
-                          <span class="dot1"></span>
-                          <span class="dot2"></span>
-                        </div>
-                        
-                        <div class="login-granted-content">
-                          <i class="material-icons">done</i>
-                        </div>
-                      </div>
+<html>
+  <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/login.css"/>
+
+  </head>
+
+  
+  <body>
+
+
+        <body>
+                <div class="container login-container">
+                  <div class="row">
+                    <div class="col-md-6 ads">
+                      <h1><span id="f1">Espaço de Dança</span><br><span id="sl">Ayla Martins</span></h1>
                     </div>
-                  </form>
+                    <div class="col-md-6 login-form">
+                      <div class="profile-img">
+                        <img src="img/elements/login.jpg" alt="profile_img" height="140px" width="140px;">
+                      </div>
+                      <h3>Login</h3>
+                      <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="username" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="password" placeholder="Senha">
+                        </div>
+                        <div class="form-group">
+                          <button type="button" class="btn  btn-lg btn-block" style="background-color: #ad38a8; color: #002347">Sign In</button>
+                        </div>
+                        <div class="form-group forget-password">
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              
-    
-</body>
+    </body>
 </html>

@@ -7,157 +7,85 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/estilo.css">
+  <!------ Include the above in your HEAD tag ---------->
 </head>
-<body>
-<script type="text/javascript">  
+<body class="ml-auto">
 
-function maskCPF(cpf){
-
-	
-	var cpf = document.teste.cpf.value;	
-	
-	document.teste.log.value = cpf; 
-	
-	
-    return cpf;
-}
-</script> 
-
-  <center>
-    <h1>Escola Virtual</h1>
-    <h2>Cadastro de Alunos</h2>
-    <hr>
     
-   <form name="teste" method="post" target="_myframe">
-     <table border="2" cellpadding="5" width="100%" bgcolor="#E8E8E8">
-       <tbody>
-         <tr>
-           <td>
-             <b>Dados Pessoais</b>
-             <table border="0" width="100%">
-               <tbody>
-                 <tr>
-                   <td align="right">Matrícula: </td>
-               <td>
-                <input type="text" name="mat" size="40" maxlength="40">
-                   </td>
-                 </tr>
-                 <tr>
-                   <td align="right">Nome do Aluno: </td>
-               <td>
-                <input type="text" name="professor" size="40" maxlength="40">
-                   </td>
-                 </tr>
-                 <tr>
-                   <td align="right" >CPF: </td>
-               <td>
-                <input type="text" name="cpf" id="cpf" size="11" maxlength="11" onkeyup="maskCPF(cpf)"  >
-                   </td>
-                 </tr>
-                 <tr>
-                 </tr>
-                 <tr>
-                   <td align="right">Nascimento(dd/mm/aaaa):</td>
-                   <td>
-                     <input type="text" name="dia" size="2" maxlength="2">
-                     /
-                     <input type="text" name="mes" size="2" maxlength="2">
-                     /
-                     <input type="text" name="ano" size="4" maxlength="4">
-                     <td>
-                       <tr>
-                         <tr>
-                   <td align="right">Endereço: </td>
-               <td>
-                <input type="text" name="end" size="40" maxlength="40">
-                   </td>
-                 </tr>
-                       <tr>
-                   <td align="right">Bairro: </td>
-               <td>
-                <input type="text" name="bairro" size="10" maxlength="10"> N°: <input type="text" name="num" size="5" maxlength="5">
-                 
-                   </td>
-                 </tr>
-          <tr>
-            <td align="right">Nome da Mãe:</td>
-            <td>
-              <input type="text" name="mae" size="40" maxlength="30">
-            </td>
-            </tr>
-                       <tr>
-            <td align="right">Nome da Pai:</td>
-            <td>
-              <input type="text" name="pai" size="40" maxlength="30">
-            </td>
-            </tr>
-             <tr>
-               <td align="right">Telefone:</td>
-      <td>
-        DDD(<input type="text" name="ddd" size="3" maxlength="3">)
-        <input type="text" name="tel" size="9" maxlength="9">
-                       </td>
-                       </tr>
-                       
-                       </td>
-            </tr>
-             <tr>
-               <td align="right">Celular:</td>
-      <td>
-        DDD(<input type="text" name="ddd2" size="3" maxlength="3">)
-        <input type="text" name="cel" size="9" maxlength="9">
-               </td>
-                       </tr>
-                 <tr>
-                   <td align="right">E-mail:</td>
-                   <td>
-                     <input type="text" name="email" size="30" maxlength="30">
-                   </td>
-                 </tr>
-               </table>
-             </td>
-	</tr>
-	<tr>
-	    <td>
-
-
-<b>Dados para Acesso ao Sistema</b>
-	      <table border=0 width=100%>
-	        <tr valign=top>
-	          <td>
-
-
-
-
-                <tr>
-                  <td align="right"><span style="padding-left:20px">Login:</span></td>
-                   <td>
-                     <input type="text" name="log" id="log" size="11" maxlength="11" >
-                   </td>
-                 </tr>
-                  <tr>
-                   <td align="right">Senha:</td>
-                   <td>
-                     <input type="text" name="pass" size="11" maxlength="11">
-                   </td>
-                 </tr>     
-                         
-                
-
-               </tbody>
-             </table>
-           </td>
-         </tr>
-		 </tbody>
-       </table>
-          <p>
-       <input type="submit" value="Cadastrar">
-       <input type="reset" value="Limpar Dados">
-     </p>
-    </form>
-  </center>
-                
+    <form class="form">
+    <fieldset>
+    
+    <!-- Form Name -->
+    <legend>Cadastrar</legend>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="nome">Nome:</label>  
+      <div class="col-md-4">
+      <input id="nome" name="nome" type="text" placeholder="" class="form-control input-md" required="">
+        
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="telefone">Telefone:</label>  
+      <div class="col-md-4">
+      <input id="telefone" name="telefone" type="text" placeholder="" class="form-control input-md" required="">
+        
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="email">E-mail:</label>  
+      <div class="col-md-4">
+      <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+        
+      </div>
+    </div>
+    
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="sexo">Sexo:</label>
+      <div class="col-md-4">
+        <select id="sexo" name="sexo" class="form-control">
+          <option value="Não informado">Não informado</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+        </select>
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="data_nascimento">Data de Nascimento:</label>  
+      <div class="col-md-4">
+      <input id="data_nascimento" name="data_nascimento" type="text" placeholder="" class="form-control input-md">
+        
+      </div>
+    </div>
+    
+    
+    <!-- Password input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="senha">Senha:</label>
+      <div class="col-md-4">
+        <input id="senha" name="senha" type="password" placeholder="" class="form-control input-md">
+        
+      </div>
+    </div>
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="cadastrar"></label>
+      <div class="col-md-4">
+        <button id="cadastrar" name="cadastrar" class="btn btn-primary">Cadastrar</button>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>                
             
                          
                      
