@@ -105,6 +105,8 @@
          </h2>
       
       <!-- Text input-->
+      <form class="form-group" method="POST" action="acao/cadastrando.php">
+
       <div class="form-group">
         <label class="col-md-4 control-label" for="nome">Nome:</label>  
         <div class="col-md-4">
@@ -147,7 +149,7 @@
       <div class="form-group" style="padding-top: 5%;">
         <label class="col-md-4 control-label" for="data_nascimento">Data de Nascimento:</label>  
         <div class="col-md-4">
-        <input id="data_nascimento" name="data_nascimento" type="date" placeholder="" class="form-control input-md">
+        <input id="data_nascimento" name="dataNascimento" type="date" placeholder="" class="form-control input-md">
           
         </div>
       </div>
