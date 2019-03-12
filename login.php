@@ -75,15 +75,15 @@
                 <div class="container" style="padding-top: 300px;">
 
                       <h3>Login</h3>
-                      <form>
+                      <form class="form-group" method="POST" action="acao/acesso.php">
                         <div class="form-group">
-                          <input type="text" class="form-control" name="username" placeholder="E-mail">
+                          <input type="text" class="form-control" name="email" placeholder="E-mail">
                         </div>
                         <div class="form-group">
-                          <input type="text" class="form-control" name="password" placeholder="Senha">
+                          <input type="text" class="form-control" name="senha" placeholder="Senha">
                         </div>
                         <div class="form-group">
-                          <button type="button" class="btn  btn-lg btn-block" style="background-color: #002347; color: #ad38a8">Entrar</button>
+                          <button type="submit" class="btn  btn-lg btn-block" style="background-color: #002347; color: #ad38a8">Entrar</button>
                         </div>
                         <div class="form-group forget-password text-right">
                             <a href="#">Esqueceu a senha?</a>
