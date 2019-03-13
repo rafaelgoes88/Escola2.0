@@ -19,7 +19,7 @@ $dataNascimento= $_POST['dataNascimento'];
 $senha=$_POST['senha'];
 $query = mysqli_query($conexao,"INSERT INTO usuario VALUES ('$id','$nome','$telefone','$email','$sexo','$dataNascimento','$senha')");
 
-echo"<center><h1>Cadastro efetuado com sucesso!!<h1>";
+echo "<script> window.location='../login.php';</script>";
 
 ?>
 </body>
