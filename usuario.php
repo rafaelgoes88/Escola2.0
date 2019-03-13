@@ -1,7 +1,3 @@
-<?php
-session_start();
-if(($_SESSION == "Usuario") && $_SESSION['acesso'] == 1) {
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -179,27 +175,7 @@ if(($_SESSION == "Usuario") && $_SESSION['acesso'] == 1) {
       </div>
     </div>
 
-    <!-- Modals error -->
 
-    <div id="error" class="modal modal-message fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <i class="ti-close"></i>
-            </button>
-            <h2>Desculpe !</h2>
-            <p>Algo deu errado</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--================End Contact Success and Error message Area =================-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -273,9 +249,3 @@ if(($_SESSION == "Usuario") && $_SESSION['acesso'] == 1) {
 
     }
 </script>
-<?php
-}
-else{
-	echo "<script> window.location='index.php';</script>"; 
-}
-?>

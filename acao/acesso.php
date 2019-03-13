@@ -16,14 +16,14 @@
 				if($result == 0){
 					unset ($_SESSION['pri']);
 					echo "<script> alert('Login e/ou Senha não Cadastradas!!'); </script>";
-					echo "<script> window.location='index.php';</script>"; 
+					echo "<script> window.location='../index.html';</script>"; 
 				}
 				else{
 					$registro = mysqli_fetch_row($query);
 					$email = $registro[0];
 					$senha = $registro[1];
 					echo "<script>alert('logado com sucesso');</script>";
-					echo "<script> window.location='index.php';</script>";
+					echo "<script> window.location='../usuario.php';</script>";
 					
 					}
 				
