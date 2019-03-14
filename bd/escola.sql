@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 13-Mar-2019 às 21:38
--- Versão do servidor: 10.1.37-MariaDB
--- versão do PHP: 7.3.1
+-- Generation Time: 14-Mar-2019 às 22:28
+-- Versão do servidor: 10.1.31-MariaDB
+-- PHP Version: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -34,7 +34,6 @@ CREATE TABLE `cadastrando` (
   `telefone` varchar(250) NOT NULL,
   `email` varchar(250) NOT NULL,
   `sexo` varchar(250) NOT NULL,
-  `dataNascimento` date NOT NULL,
   `modalidade` varchar(250) NOT NULL,
   `cadastrarComo` varchar(250) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -43,18 +42,9 @@ CREATE TABLE `cadastrando` (
 -- Extraindo dados da tabela `cadastrando`
 --
 
-INSERT INTO `cadastrando` (`id`, `nome`, `telefone`, `email`, `sexo`, `dataNascimento`, `modalidade`, `cadastrarComo`) VALUES
-(3, 'bianca martins', '232133232', 'bianca@gmail.com', 'Feminino', '0000-00-00', 'Danca Contemporanea', 'Professor'),
-(4, 'bianca martins', '', 'bianca@gmail.com', '', '0000-00-00', '', ''),
-(5, '', '', '', 'Masculino', '0000-00-00', 'Hip Hop', 'Professor'),
-(6, '', '', '', 'Masculino', '0000-00-00', 'Hip Hop', 'Professor'),
-(7, '', '', '', 'Masculino', '0000-00-00', 'Hip Hop', 'Professor'),
-(8, '', '', '', 'Masculino', '0000-00-00', 'Hip Hop', 'Professor'),
-(9, '', '', '', 'Masculino', '0000-00-00', 'Hip Hop', 'Professor'),
-(10, '', '', '', 'Masculino', '0000-00-00', 'Hip Hop', 'Professor'),
-(11, '', '', '', 'Masculino', '0000-00-00', 'Hip Hop', 'Professor'),
-(12, '', '', '', 'Masculino', '0000-00-00', 'Hip Hop', 'Professor'),
-(13, '', '', '', 'Masculino', '0000-00-00', 'Hip Hop', 'Professor');
+INSERT INTO `cadastrando` (`id`, `nome`, `telefone`, `email`, `sexo`, `modalidade`, `cadastrarComo`) VALUES
+(3, 'bianca martins', '232133232', 'bianca@gmail.com', 'Feminino', 'Danca Contemporanea', 'Professor'),
+(14, 'rafael', '5555555', 'rafael@gmail.com', 'Masculino', 'Hip Hop', 'Professor');
 
 -- --------------------------------------------------------
 
@@ -100,7 +90,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `cadastrando`
 --
 ALTER TABLE `cadastrando`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `usuario`
