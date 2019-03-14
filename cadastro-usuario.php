@@ -29,7 +29,7 @@
           <div class="container">
             
             <a class="navbar-brand logo_h" href="index.html" style="color: #04091e;"
-              ><h1>Professores e Alunos<h1> 
+              ><h1>Cadastro de Usuário<h1> 
             </a>
             <button
               class="navbar-toggler"
@@ -43,7 +43,7 @@
               <span class="icon-bar"></span> <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <div style="font-family: 'Lobster', cursive;"
+             <div style="font-family: 'Lobster', cursive;"
               class="collapse navbar-collapse offset"
               id="navbarSupportedContent"
             >
@@ -57,12 +57,12 @@
                 </li>
           
     </header>
-    <section class="form1" style="padding:100px;">
+    <section class="form1" style="padding:160px;">
 
       
       
     <div class="form-ca">
-      <form class="form-group" method="POST" action="acao/cadastrando.php">
+      <form class="form-group" method="POST" action="acao/usuario.php">
 
       
  
@@ -74,14 +74,7 @@
         <input type="text" id="fname" name="nome" placeholder="">
       </div>
     </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="telefone">Telefone</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="telefone" placeholder="">
-      </div>
-    </div>
+    
     <div class="row">
       <div class="col-25">
         <label for="email">email</label>
@@ -91,49 +84,18 @@
       </div>
     </div>
     
+    
+    
     <div class="row">
-      <div class="col-25">
-        <label for="Sexo">Sexo</label>
-      </div>
-      <div class="col-76">
-        <select id="sexo" name="sexo">
-          <option value="Masculino">Masculino</option>
-          <option value="Feminino">Feminino</option>
-          <option value="Outro">Outro</option>
-        </select>
-      </div>
 
       <div class="col-25">
-        <label for="modalidade" style="margin-left: 10px;">Modalidade</label>
+        <label for="senha">Senha</label>
       </div>
       <div class="col-76">
-        <select id="modalidade"  name="modalidade">
-          <option value="Hip Hop">Hip Hop</option>
-          <option value="Danca Contemporanea">Dança Contemporânea</option>
-          <option value="Jazz Dance">Jazz Dance</option>
-          <option value="Balett Classico">Balett Clássico</option>
-        </select>
+        <input type="password"style="width:200px;" id="senha" name="senha" placeholder="">
       </div>
-    </div>
-
-    <div class="row">
-      <div class="col-25">
-        <label for="cadastrarComo">Cadastrar Como</label>
-      </div>
-      <div class="col-76">
-        <select id="cadastrarComo" name="cadastrarComo">
-          <option value="Professor">Professor</option>
-          <option value="Aluno">Aluno</option>
-          
-        </select>
-
-        
 </div>
-</div>
-
-
-
-     
+   
    
       <input type="submit"style="margin-top: 40px;" value="Cadastrar">
     </div>
@@ -141,6 +103,7 @@
 </div>
     </section>
    
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -69,37 +71,30 @@
         </nav>
       </div>
     </header>
-    <section class="home_banner_area"style="float: center;">
-    <div>
+    <section style="padding:100px;">
+    <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
 
-                <div class="container" style="padding-top: 300px;">
+    <!-- Icon -->
+    <div class="fadeIn first">
+      ENTRAR NO SISTEMA
+    </div>
 
-                      <h3>Login</h3>
-                      <form class="form-group" method="POST" action="acao/acesso.php">
-                        <div class="form-group">
-                          <input type="text" class="form-control" name="email" placeholder="E-mail">
-                        </div>
-                        <div class="form-group">
-                          <input type="text" class="form-control" name="senha" placeholder="Senha">
-                        </div>
-                        <div class="form-group">
-                          <button type="submit" class="btn  btn-lg btn-block" style="background-color: #002347; color: #ad38a8">Entrar</button>
-                        </div>
-                        <div class="form-group forget-password text-right">
-                            <a href="#">Esqueceu a senha?</a>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            </section>
-            <footer class="footer" style=" background: #002347; text-align: center; height:50px;">
-                    Desenvolvido por R&L<br>
-                    Projeto Integrador 2019.
-                     
-                      
-                  
-                </footer>
+    <!-- Login Form -->
+    <form class="form-group" method="POST" action="acao/acesso.php">
+      <input type="text" id="login" class="fadeIn second" name="email" placeholder="E-mail">
+      <input type="text" id="password" class="fadeIn third" name="senha" placeholder="Senha">
+      <input type="submit" class="fadeIn fourth" value="Entrar">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Esqueceu a Senha?</a>
+    </div>
+
+  </div>
+</div>
+           
     </body>
 </html>
