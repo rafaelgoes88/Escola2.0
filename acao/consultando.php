@@ -28,7 +28,7 @@
           <div class="container">
             
             <a class="navbar-brand logo_h" href="index.html" style="color: #04091e;"
-              ><h1>Professores e Alunos<h1> 
+              ><h1>Resultado<h1> 
             </a>
             <button
               class="navbar-toggler"
@@ -50,10 +50,7 @@
                 <li class="nav-item active">
                   <a class="nav-link"  href="index.html">Voltar ao site</a>
                 </li>
-                <ul class="nav navbar-nav menu_nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link"  href="usuario.php">Voltar para Consulta</a>
-                </li>
+                
           
     </header>
 <?php
@@ -77,6 +74,7 @@ include "../config.php";
     while($rows_cursos = mysqli_fetch_array($resultado_cursos)){ ?>
 
     <section class="form1" style="padding:100px;">
+    
 
 
      <div class="form-ca">
@@ -117,8 +115,9 @@ include "../config.php";
   <div class="col-75">
     <input type="text" id="lname" readonly value="<?php echo $rows_cursos["sexo"];?>" name="email" placeholder="">
   </div>
+  </div>
 
-
+<div class="row">
   <div class="col-25">
     <label for="modalidade" >Modalidade</label>
   </div>
@@ -131,12 +130,13 @@ include "../config.php";
   <div class="col-25">
     <label for="cadastrarComo">Cadastrado Como</label>
   </div>
-  <div class="col-76">
+  <div class="col-75">
  
     <input type="text" id="lname" readonly value="<?php echo $rows_cursos["cadastrarComo"];?>" name="email" placeholder="">
   </div>
+  </section>
 
-    
+ 
 </div>
 </div>
 
@@ -145,7 +145,11 @@ include "../config.php";
 
 </div>
 </form>
+
+
 </div>
+
+
 <?php
     }
  ?>
